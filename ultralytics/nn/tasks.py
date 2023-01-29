@@ -87,7 +87,7 @@ class BaseModel(nn.Module):
             LOGGER.info(f"{sum(dt):10.2f} {'-':>10s} {'-':>10s}  Total")
 
     def fuse(self):
-        pass
+        return self
 
     def is_fused(self, thresh=10):
         """
